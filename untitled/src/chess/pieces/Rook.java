@@ -18,7 +18,7 @@ public class Rook extends ChessPiece {
     }
 
     @Override
-    public boolean[][] possibleMovies() {
+    public boolean[][] possibleMove() {
         boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
         Position p = new Position(0, 0);
@@ -67,4 +67,3 @@ public class Rook extends ChessPiece {
     }
 
 }
-

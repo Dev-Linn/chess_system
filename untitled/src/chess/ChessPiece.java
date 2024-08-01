@@ -22,4 +22,6 @@ private Color color;
         return p != null && p.getColor() == color;
 
     }
+
+    public abstract boolean[][] possibleMove();
 }

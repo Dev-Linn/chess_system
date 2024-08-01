@@ -30,7 +30,7 @@ public class ChessMath {
     public boolean[][] possibleMoves(ChessPosition sourcePosition) {
         Position position = sourcePosition.toPosition();
         validateSourcePosition(position);
-        return board.piece(position).possibleMovies();
+        return board.piece(position).possibleMove();
     }
 
     public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
@@ -65,7 +65,7 @@ public class ChessMath {
     }
 
     private void placeNewPiece(char column, int row, ChessPiece piece) {
-       board.placePiece(piece, new ChessPosition(column, row).toPosition());
+        board.placePiece(piece, new ChessPosition(column, row).toPosition());
     }
 
 
